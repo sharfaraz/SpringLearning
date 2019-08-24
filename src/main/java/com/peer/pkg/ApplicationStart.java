@@ -17,6 +17,11 @@ public class ApplicationStart {
 		System.out.println(cal.subtract());
 		System.out.println(cal.multiply());
 		System.out.println(cal.divide());
+		
+		Animals zebra = (Animals) applicationContext.getBean("zeb");
+		System.out.println(zebra.getHeight());
+		System.out.println(zebra.getWeight());
+		System.out.println(zebra.getSpeciesName());
 	}
 
 }
