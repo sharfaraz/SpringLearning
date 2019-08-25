@@ -22,6 +22,7 @@ public class ApplicationStart {
 		System.out.println(zebra.getHeight());
 		System.out.println(zebra.getWeight());
 		System.out.println(zebra.getSpeciesName());
+		System.out.println(zebra.getColor().getColorName());
 	}
 
 }

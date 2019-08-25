@@ -3,6 +3,20 @@ package com.peer.pkg;
 public class Animals {
 	private int height;
 	private int weight;
+	private Color color;
+	
+	public Color getColor() {
+		return color;
+	}
+
+
+
+	public void setColor(Color color) {
+		this.color = color;
+	}
+
+
+
 	private String speciesName;
 	
 
@@ -43,10 +57,11 @@ public class Animals {
 
 
 
-	public Animals( int height, int weight, String speciesName) {
+	public Animals( int height, int weight, String speciesName, Color color) {
 		this.height = height;
 		this.weight = weight;
 		this.speciesName = speciesName;
+		this.color = color;
 	}
 
 }

@@ -16,8 +16,14 @@
 	</bean>
 
 	<bean id="zeb" class="com.peer.pkg.Animals">
-		<constructor-arg type="int" value="2" />
-		<constructor-arg type="int" value="4" />
-		<constructor-arg type="java.lang.String" value="Zebra" />
+		<constructor-arg index="1" value="2" />
+		<constructor-arg index="0" value="4" />
+		<constructor-arg index="2" value="Zebra" />
+		<constructor-arg index="3" ref="blackAndWhite" />
+	</bean>
+
+	<bean id="blackAndWhite" class="com.peer.pkg.Color">
+		<constructor-arg value="Black and White" />
+		<constructor-arg value="10" />
 	</bean>
 </beans>
