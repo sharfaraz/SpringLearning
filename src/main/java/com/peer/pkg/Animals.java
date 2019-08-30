@@ -5,6 +5,12 @@ public class Animals {
 	private int weight;
 	private Color color;
 	
+	public Animals() {
+		super();
+	}
+
+
+
 	public Color getColor() {
 		return color;
 	}
